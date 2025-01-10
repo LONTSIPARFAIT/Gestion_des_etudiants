@@ -1,0 +1,407 @@
+* {
+    padding: 0;
+    margin: 0;
+    border-color: var(--mainColor);
+    text-decoration: none;
+    border: none;
+    }/* variable */
+    :root
+    {
+        --mainColor: darkgoldenrod;
+        --bgColor: rgba(97, 97, 175, 0.705);
+        --orange: orange;
+    }
+
+
+    /* //Body  */
+    .acceuilBody{
+        background-color: blue;
+    }
+    .formularieBody {
+        height: 100vh;
+        padding: 0.9rem;
+    }
+    form {
+        overflow-x: hidden;
+    }
+    fieldset {
+        position: relative;
+        /* border:5px black solid; */
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 0.9rem;
+        font-size: 1.2rem;
+        font-weight: 600;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        padding: 2rem 0.5rem;
+        /* box-shadow: 2px 2px 20px 10px black; */
+        min-height: 90vh;
+
+    }
+    .titre {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1.8rem;
+        font-size: 1.7rem;
+        color: var(--mainColor);
+        /* border-top: 2px solid;
+border-bottom: 2px solid; */
+    }
+    fieldset div {
+        display: grid;
+        grid-template-columns: 37% 60%;
+    }
+    fieldset div > div {
+        display: grid;
+        grid-template-columns: 50% 50%;
+
+    }
+    fieldset div > div > div {
+        display: grid;
+        grid-template-columns: 28% 65%;
+        gap: 0.5rem;
+
+    }
+    select{
+        height: 3.4rem;
+        border-top-right-radius: 40px;
+        border-bottom-right-radius: 40px;
+        font-size: 1.2rem;
+        border: 3px solid;
+        /* padding: 0   .5rem; */
+    
+    }
+    fieldset input {
+        height: 2.4rem;
+        border-top-right-radius: 40px;
+        border-bottom-right-radius: 40px;
+        font-size: 1.2rem;
+        border: 3px solid;
+        padding: 0.5rem;
+    }
+    .para {
+        position: relative;
+        /* display: flex; */
+        align-items: center;
+        margin: 1rem 0;
+
+    }
+    .para::after {
+        content: "";
+        height: 3px;
+        width: 100%;
+        position: absolute;
+        background-color: var(--mainColor);
+        transform: translateY(-50%);
+        top: 50%;
+    }
+    input[type="radio"] {
+        cursor: pointer;
+        border-color: var(--mainColor);
+    }
+    input[type="submit"] {
+        cursor: pointer;
+        background-color: var(--mainColor);
+        padding: 1rem 0;
+        height: 3.5rem;
+        font-weight: bold;
+        font-size: 1.3rem;
+        border-radius: 20px;
+        box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.63);
+        width: 30%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        margin-top: 3rem;
+    }
+
+    /* //acceuil */
+
+    .acceuilBody {
+        /* background-image: url('./img/dreamstime_xxl_50283294-1-768x768.jpg'); */
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    .contentAcceuil {
+        max-width: 100vw;
+        display: grid;
+        grid-template-columns: 30% 40% 30%;
+        height: 90%;
+        width: 97%;
+        /* border: 10px cyan solid ; */
+        /* padding: 1rem 1rem; */
+        /* border-radius: 3%; */
+        overflow: hidden;
+        /* box-shadow: inset 0px 0px 20px 20px rgba(107, 92, 74, 0.603); */
+    }
+    .imgAcceuil {
+        width: 100%;
+        height: 100%;
+    }
+    .first {
+        background-color: var(--bgColor);
+        display: grid;
+        grid-template-rows: 22%;
+
+        padding: 1rem;
+    }
+    .second {
+        display: grid;
+        grid-template-rows: 80% 20%;
+        background-color: rgb(131, 167, 233);
+    }
+    .third {
+        padding: 1rem;
+        background-color: var(--bgColor);
+        display: grid;
+        grid-template-rows: 18% 18%;
+        gap: 1rem;
+    }
+    .visualise,
+    .modifier,
+    .supprimer,
+    .ajouter {
+        background: var(--orange);
+        border-radius: 15px;
+        padding: 1rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: rgb(77, 117, 192);
+    }
+
+
+    /* //liste etudiants */
+    .bodyListe {
+        ;
+        /* background-color: rgb(77, 117, 192); */
+    }
+    .h1Liste {
+        text-align: center;
+        padding: 1rem;
+        color: var(--orange);
+        font-size: 2.8rem;
+        text-decoration: underline;
+    }
+    .champ {
+        display: grid;
+        grid-template-columns: 3% 45% 28% 23%;
+
+        padding: 0.9rem 0.7rem;
+        gap: 0.5rem;
+        align-items: center;
+        background: var(--bgColor);
+        font-size: 1.5rem;
+        border-bottom: 2px var(--orange) solid;
+
+        font-weight: bold;
+        /* margin-bottom: 1rem; */
+    }
+    .champOperation {
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+        font-style: italic;
+        font-size: 1.2rem;
+    }
+    .listeEtudiant {
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+        font-size: 1.3rem;
+    }
+    .etudiant {
+        font-weight: bold;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        display: grid;
+        grid-template-columns: 3% 45% 28% 23%;
+
+        position: relative;
+        gap: 0.5rem;
+        align-items: center;
+        padding: 0.3rem 0.7rem;
+        border-bottom: 2px var(--orange) solid;
+        border-radius: 20px;
+    }
+
+    .operation {
+        display: flex;
+        gap: 2.5rem;
+        justify-content: center;
+    }
+    .fa {
+        font-size: 1.5rem;
+        cursor: pointer;
+        transition: 0.1s ease;
+        text-align: center;
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+    .pencilEtudiants {
+        background: green;
+        padding: 0.5rem;
+        border-radius: 7px;
+    }
+    .pencilEtudiants:hover {
+        color: var(--orange);
+        background: white;
+        box-shadow: 0 0 3px 0 black;
+
+    }
+    .eyeEtudiants {
+        color: var(--mainColor);
+        background: white;
+        padding: 0.5rem;
+        border-radius: 7px;
+        box-shadow: 0 0 3px 0 black;
+    }
+    .eyeEtudiants:hover {
+        color: white;
+        background: var(--orange);
+
+    }
+    .closeEtudiants {
+        border-radius: 7px;
+        background: red;
+        padding: 0.5rem;
+    }
+    .closeEtudiants:hover {
+        color: var(--orange);
+        background: white;
+        box-shadow: 0 0 3px 0 rgb(73, 34, 34);
+
+    }
+
+
+    /* //visualiser */
+    .visualiser {}
+    .visualiser .headervisualise {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-weight: bold;
+        font-size: 1.8rem;
+        gap: 1.5rem;
+    }
+    .visualiser .headervisualise img {
+        width: 20%;
+    }
+    .visualiser .content {
+        display: flex;
+        justify-content: center;
+    }
+    .visualiser .content table {
+        width: 50%;
+    }
+    .imgvsualise {
+        display: flex;
+        justify-content: center;
+    }
+    .imgvsualise img {
+        border-radius: 50%;
+    }
+    .visualiser table {
+font-size: 1.3rem;
+font-weight: bold;
+border: 1px black solid;
+    }
+    .visualiser table td{
+    padding: 1rem;
+}
+tr::before{
+    content:  "";
+    position: absolute;
+width: 100%;height: 2px;
+background-color: black;
+}
+.visualiser table tr{
+    position: relative;
+    }
+
+    /* formulaire de user */
+    .UserBody{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+    }
+    .UserBody a{
+        color: white;
+        
+    }
+    .formUSer{
+        position: relative;
+        width: 40%;
+        height: 35%;
+        background-color: white;
+        overflow: hidden;
+        border-radius: 20px;
+        padding: 2rem 1rem;
+        border: none;
+        gap: 0;
+        
+    }
+    .formUSer input{
+        width: 100%;
+    }
+    .UserBody div{
+        display: flex;align-items: center;
+        gap: 3rem;
+    }
+    .buttonUser{
+display: flex;
+justify-content: center;
+margin-top: 2rem;
+background:transparent;
+font-weight: bold;
+font-size: 1.5rem;
+}
+.buttonUser a{
+        cursor: pointer;
+        background-color: blue;
+        padding: 1rem 4rem;
+        border-radius: 10px;
+    }
+    .fieldset {
+        border: none;
+    }
+    .fieldset div:not(.buttonUser){
+        display: grid;
+        grid-template-columns: 20% 70%;
+        gap: 1rem;
+    }
+    .retourUser{
+        color: white;
+        border-radius: 10px;
+background-color: rgba(212, 115, 212, 0.856);
+margin-top: 7%;
+font-weight: bold;
+font-size: 1.5rem;
+display: flex;
+    }
+    .retourUser a{
+        padding: 1rem 3rem;
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+    .message{
+        position: absolute;
+        width: 100%;
+        display: flex;
+        font-style: italic;
+        color: red;
+        top:  26%;    
+display: flex;
+justify-content: center;
+        font-size: 1rem;
+    }
+    div label{
+        font-size: 1.3rem;
+    }

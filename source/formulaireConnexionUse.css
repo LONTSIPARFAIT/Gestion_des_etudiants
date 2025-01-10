@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+  border-color: var(--mainColor);
+  text-decoration: none;
+  border: none;
+  }/* variable */
+.UserBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  background-color: bla ck;
+  height: 100vh; 
+  background: skyblue;
+  background: linear-gradient(to right, rgba(141, 80, 197, 0.548) 30%,rgb(50, 148, 228));
+}
+.buttonUser {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  background: transparent;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.formUSer {
+  position: relative;
+  width: 42%;
+  height: 40%;
+  background-color: white;
+  overflow: hidden;
+  border-radius: 20px;
+  padding: 1rem 1rem;
+  border: none;
+  gap: 0;
+}
+div label {
+  font-size: 1.3rem;
+}
+.retourUser a {
+  padding: 1rem 3rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+
+
+h1{
+text-align: center;
+font-size: 1.8rem;
+margin-bottom: 1rem;
+}
+   .UserBody a{
+          color: white;
+          
+      }
+      .formUSer input{
+          width: 100%;
+      }
+      .UserBody div{
+          display: flex;align-items: center;
+          gap: 3rem;
+      }
+   
+  .buttonUser a{
+          cursor: pointer;
+          background-color: blue;
+          padding: 1rem 4rem;
+          border-radius: 10px;
+      }
+      .fieldset {
+          border: none;
+      }
+      .fieldset div:not(.buttonUser){
+          display: grid;
+          grid-template-columns: 20% 70%;
+          gap: 1rem;
+      }
+      .retourUser{
+          color: white;
+          border-radius: 10px;
+  background-color: rgba(212, 115, 212, 0.856);
+  margin-top: 7%;
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: flex;
+      }
+      .retourUser a{
+          padding: 1rem 3rem;
+          display: flex;
+          gap: 1rem;
+          align-items: center;
+      }
+      .message{
+          position: absolute;
+          width: 100%;
+          display: flex;
+          font-style: italic;
+          color: red;
+          top:  26%;    
+  display: flex;
+  justify-content: center;
+          font-size: 1rem;
+      }
+      div label{
+          font-size: 1.3rem;
+      }
+
+
+
+      fieldset {
+          position: relative;
+          /* border:5px black solid; */
+          border-radius: 20px;
+          display: flex;
+          flex-direction: column;
+          gap: 0.9rem;
+          font-size: 1.2rem;
+          font-weight: 600;
+          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+          padding: 2rem 0.5rem;
+          /* box-shadow: 2px 2px 20px 10px black; */
+          min-height: 90vh;
+  
+      }
+     fieldset div {
+          display: grid;
+          grid-template-columns: 37% 60%;
+      }
+      fieldset div > div {
+          display: grid;
+          grid-template-columns: 50% 50%;
+  
+      }
+      fieldset div > div > div {
+          display: grid;
+          grid-template-columns: 28% 65%;
+          gap: 0.5rem;
+  
+      }
+      fieldset input {
+          height: 2.4rem;
+          border-top-right-radius: 40px;
+          border-bottom-right-radius: 40px;
+          font-size: 1.2rem;
+          border: 3px solid;
+          padding: 0.5rem;
+      }

@@ -1,0 +1,93 @@
+.logo img {
+    width: 6vw;
+    height: 6vh;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+    border-bottom: 2px rgba(0, 0, 0, 0.39) solid;
+    /* width: 98%; */
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 2rem;
+}
+ul li {
+    list-style: none;
+    /* max-width: 20%; */
+}
+li a {
+    display: flex;
+    text-decoration: none;
+    /* max-width: 30%; */
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+}
+a:hover {
+    color: violet;
+    font-size: 1.6rem;
+    transition-duration: 0.1s;
+    /* transform: scale(1.2); */
+}
+.profil img {
+    width: 5vw;
+    height: 4vh;
+}
+
+.img{
+    display: flex;
+    justify-content: center;
+}
+
+
+.img i{
+    font-size: 1000%;
+}
+
+.profil {
+    border: 2px rgb(245, 244, 244) solid;
+    box-shadow: inset 0 0 3px 1px rgb(136, 128, 128);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 20px;
+    position: relative;
+}
+.profil i {
+    font-size: 1.8rem;
+cursor: pointer;
+}
+.deconnexion{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 85%;
+    gap: 1rem
+    ;
+    background-color: rgba(86, 74, 202, 0.404);
+    border-radius: 15px;
+    padding: 1rem;
+right: -30%;
+font-weight: bold;
+font-size: 1.5rem;
+border: 2px white solid;
+color: white;
+width: 180%;
+visibility: hidden;
+z-index: 1000;
+}
+.deconnexion:hover{
+    visibility: visible;
+}
+.flecheConnexion:hover+ .deconnexion {
+    cursor: pointer;
+    visibility: visible;
+    cursor: pointer;
+}
